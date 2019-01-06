@@ -15,7 +15,101 @@
   <link href="css\style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+  <header>
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">BlackJack</a>
+    </nav>
+  </header>
 
+  <div class="section h-100 d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <!-- start controls section -->
+        <div class="col-2">
+          <div id="controls">
+            <button type="button" class="btn btn-secondary btn-lg btn-block mb-2">HIT</button>
+            <button type="button" class="btn btn-secondary btn-lg btn-block">STAY</button>
+          </div>
+        </div>
+        <!-- end controls section -->
+
+        <!-- start player section -->
+        <div class="col-5 d-flex justify-content-center">
+          <div id="player">
+            <div class="text-center alert alert-success" role="alert">
+              <span class="score-keep">Player:</span> 21
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="card" style="width: 12rem;">
+                  <img src="img/cards/ace_of_spades.svg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="card" style="width: 12rem;">
+                  <img src="img/cards/ace_of_hearts.svg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end player section -->
+
+        <!-- start dealer section -->
+        <div class="col-5 d-flex justify-content-center">
+          <div id="dealer">
+            <div class="text-center alert alert-success" role="alert">
+              <span class="score-keep">Dealer:</span> 21
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="card" style="width: 12rem;">
+                  <img src="img/cards/ace_of_clubs.svg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="card" style="width: 12rem;">
+                  <img src="img/cards/ace_of_diamonds.svg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end dealer section -->
+      </div>
+    </div>
+  </div>
+  <footer class="text-light text-center bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          Game of BlackJack | Created By: Thomas Naylor
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 

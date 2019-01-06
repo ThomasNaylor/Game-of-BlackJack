@@ -2,3 +2,27 @@
 *  Thomas Naylor
 *  HTML, CSS, Bootstrap, JavaScript
 */
+
+/* start default styles */
+html,
+body {
+    height: 100%;
+}
+/* end default styles */
+
+/* start blackjack board styles */
+#player,
+#dealer,
+#controls {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.card {
+  border: none;
+}
+.score-keep {
+  font-weight: bold;
+}
+/* end blackjack board styles */
