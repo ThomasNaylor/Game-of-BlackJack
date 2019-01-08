@@ -11,10 +11,23 @@
                  'queen', 'king'];
 
   // generate deck of cards and assign to a variable
-  let deck = generateDeck();
+  const deck = generateDeck();
 
   // shuffle deck of cards and assign to a variable
   let shuffle = shuffleDeck(deck);
+
+  // controls
+  let btnPlay = document.getElementById('play');
+  let btnHit = document.getElementById('hit');
+  let btnStay = document.getElementById('stay');
+
+  // score display
+  let playerScore = document.getElementById('player-score');
+  let dealerScore = document.getElementById('player-score');
+
+  // board display
+  let playerBoard = document.getElementsByClassName('p-board-img');
+  let dealerBoard = document.getElementsByClassName('d-board-img');
 
   // function to generate a new 52 deck of cards
   function generateDeck() {
