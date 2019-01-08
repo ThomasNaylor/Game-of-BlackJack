@@ -38,7 +38,7 @@
       let randIndex = Math.floor(Math.random() * length);
 
       length--;
-      
+
       let temp = deck[length];
       array[length] = array[randIndex];
       array[randIndex] = temp;
