@@ -10,9 +10,13 @@
                  'seven', 'eight', 'nine', 'ten', 'jack',
                  'queen', 'king'];
 
+  // generate deck of cards and assign to a variable
   let deck = generateDeck();
 
-  // function to generate a new 52 desk of cards
+  // shuffle deck of cards and assign to a variable
+  let shuffle = shuffleDeck(deck);
+
+  // function to generate a new 52 deck of cards
   function generateDeck() {
     const data = [];
 
@@ -24,6 +28,22 @@
       }
     }
     return data;
+  }
+
+  // function to randomize the deck object array derived from the yates-fisher shuffle algorithm strategy
+  function shuffleDeck(array) {
+    let length = deck.length;
+
+    while(length > 0) {
+      let randIndex = Math.floor(Math.random() * length);
+
+      length--;
+      
+      let temp = deck[length];
+      array[length] = array[randIndex];
+      array[randIndex] = temp;
+    }
+    return array;
   }
 
   // *WIP* - to be continued
