@@ -15,6 +15,7 @@
 
   // shuffle deck of cards and assign to a variable
   let shuffle = shuffleDeck(deck);
+  console.log(shuffle);
 
   // controls
   let btnPlay = document.getElementById('play');
@@ -45,14 +46,14 @@
 
   // function to randomize the deck object array derived from the yates-fisher shuffle algorithm strategy
   function shuffleDeck(array) {
-    let length = deck.length;
+    let length = array.length;
 
     while(length > 0) {
       let randIndex = Math.floor(Math.random() * length);
 
       length--;
 
-      let temp = deck[length];
+      let temp = array[length];
       array[length] = array[randIndex];
       array[randIndex] = temp;
     }
