@@ -15,7 +15,6 @@
 
   // shuffle deck of cards and assign to a variable
   let shuffle = shuffleDeck(deck);
-  console.log(shuffle);
 
   // controls
   let btnPlay = document.getElementById('play');
@@ -23,12 +22,19 @@
   let btnStay = document.getElementById('stay');
 
   // score display
-  let playerScore = document.getElementById('player-score');
-  let dealerScore = document.getElementById('player-score');
+  let playerScoreEl = document.getElementById('player-score');
+  let dealerScoreEl = document.getElementById('player-score');
+
+  let playerScore = 0;
+  let dealerScore = 0;
 
   // board display
-  let playerBoard = document.getElementsByClassName('p-board-img');
-  let dealerBoard = document.getElementsByClassName('d-board-img');
+  let playerBoardEl = document.getElementsByClassName('p-board-img');
+  let dealerBoardEl = document.getElementsByClassName('d-board-img');
+
+  const playerCards = [];
+  const dealerCards = [];
+
 
   // function to generate a new 52 deck of cards
   function generateDeck() {
@@ -60,5 +66,9 @@
     return array;
   }
 
+  // deal cards
+  function dealCards(hand, deck) {
+    return hand.push(deck.shift());
+  }
   // *WIP* - to be continued
 })();
