@@ -32,9 +32,9 @@
   let playerBoardEl = document.getElementsByClassName('p-board-img');
   let dealerBoardEl = document.getElementsByClassName('d-board-img');
 
-  const playerCards = [];
-  const dealerCards = [];
-
+  // assign dealer and player their starting cards
+  const playerCards = [dealCards(shuffle), dealCards(shuffle)];
+  const dealerCards = [dealCards(shuffle), dealCards(shuffle)];
 
   // function to generate a new 52 deck of cards
   function generateDeck() {
@@ -67,8 +67,12 @@
   }
 
   // deal cards
-  function dealCards(hand, deck) {
-    return hand.push(deck.shift());
+  function dealCards(deck) {
+    let hand = [];
+
+    hand.push(deck.shift());
+
+    return hand;
   }
   // *WIP* - to be continued
 })();
